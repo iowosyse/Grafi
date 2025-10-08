@@ -1,0 +1,28 @@
+# ---------------- #
+# Entornos Virtuales
+# ---------------- #
+# Ignorar la carpeta del entorno virtual estándar de Python
+venv/
+.venv/
+
+# ---------------- #
+# Archivos de Python
+# ---------------- #
+# Ignorar la caché de Python, que se crea automáticamente
+__pycache__/
+*.pyc
+
+# ---------------- #
+# Editor VS Code
+# ---------------- #
+# Ignorar la carpeta de configuración del espacio de trabajo de VS Code
+.vscode/
+
+# ---------------- #
+# Archivos de sistema y otros
+# ---------------- #
+# Ignorar archivos de variables de entorno (contienen secretos)
+.env
+
+# Archivos específicos del sistema operativo
+Thumbs.db
