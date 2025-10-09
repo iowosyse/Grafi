@@ -77,9 +77,10 @@ while True:
         #img = cv.rectangle(img, (x + int(w/3.5), y + int(h*0.7)), (x + int(w*0.7), y + int(h*0.85  )), (255,255,0), 2)
         
         #circulo boca
-        img = cv.circle(img, (x + int(2.5*anchoNariz), yBoca) , int(w*0.10), (0,0,0), -1 )
+        img = cv.circle(img, (x + int(2.5*anchoNariz), yBoca) , int(w*0.10), (10,10,10), -1 )
         #rectangulo nariz
         img = cv.rectangle(img, (x + 2 * anchoNariz, y + altoNariz), (x + anchoNariz * 3, y + altoNariz * 2), (255,0,255), 2)
+        
         #rectangulo lengua
         img = cv.rectangle(img, (x + int (2.25 * anchoNariz), y + int(h*0.79)), (x + int(2.75 * anchoNariz), inicialLengua + modificadorLengua), (0,0,255), -1)
         #sacar la lengua
@@ -93,7 +94,6 @@ while True:
             if modificadorLengua < 0:
                 vueltaLengua *= -1
             
-
     cv.imshow('img', img)
     if cv.waitKey(2) & 0xFF == 27:
         break
