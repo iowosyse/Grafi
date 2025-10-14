@@ -19,7 +19,7 @@ import cv2 as cv
 import numpy as np
 import math
 
-img = cv.imread("prueba3.jpg", 0)
+img = cv.imread("Imagenes/prueba3.jpg", 0)
 x, y = img.shape
 
 def trasladar(imagen, dx, dy):
@@ -49,12 +49,12 @@ def rotar(imagen, angulo):
     theta = math.radians(angulo)
     cx, cy = ancho // 2, alto // 2  # Centro de la imagen
     
-    for i in range(x):
-        for j in range(y):
+    for i in range(alto):
+        for j in range(ancho):
             new_x = int((j - cx) * math.cos(theta) - (i - cy) * math.sin(theta) + cx)
             new_y = int((j - cx) * math.sin(theta) + (i - cy) * math.cos(theta) + cy)
-            if 0 <= new_x < y and 0 <= new_y < x:
-                imgRotada[new_y, new_x] = img[i, j]
+            if 0 <= new_x < ancho and 0 <= new_y < alto:
+                imgRotada[new_y, new_x] = imagen[i, j]
     return imgRotada
 
 def filtroBilineal(imagen):
@@ -101,20 +101,21 @@ def filtroBilineal(imagen):
                         filtro[i, j] = int(valor_nuevo)
     return filtro
 
+escala = 2
 #Transformar las imagenes
 #Transformaciones para la imagen 1
-escalada1 = escalar(img, 2)
+escalada1 = escalar(img, escala)
 fEscalada1 = filtroBilineal(escalada1)
 rfEscalada1 = rotar(fEscalada1, 45)
 final1 = filtroBilineal(rfEscalada1)
 #Transformaciones para la imagen 2
-escalada2 = escalar(img, 2)
+escalada2 = escalar(img, escala)
 rotada2 = rotar(escalada2, 45)
 final2 = filtroBilineal(rotada2)
 #Transformaciones para la imagen 3
 trasladada3 = trasladar(img, x//2, y//2)
 rotada3 = rotar(trasladada3, 90)
-escalada3 = escalar(rotada3, 2)
+escalada3 = escalar(rotada3, escala)
 final3 = filtroBilineal(escalada3)
 
 #Imagen original
@@ -153,7 +154,6 @@ cv.imshow("Rotada 3", rotada3)
 cv.imshow("Escalada 3", escalada3)
 if cv.waitKey(0) & 0xFF == ord(' '):  # Presiona espacio para salir
     cv.destroyAllWindows()
-    
     
 print("Resultado de las transformaciones de la imagen 3:")
 cv.imshow("Final Imagen 3", final3)
