@@ -29,7 +29,7 @@ cv2.destroyAllWindows()
 ### Landmarks
 Según los [apuntes de clase](https://ealcaraz85.github.io/Graficacion.io/#orgbfd06e9), los landmarks son puntos clave dentro de una imágen que ayudan a describir caracteristicas de un objeto.     
 En este caso específico de las manos, se obtienen 21 landmarks que indican puntos clave de las manos, siendo estos los puntos articulados.  
-![Estrucura de landmarks de la mano]("hand_landmarks.png")  
+![Estrucura de landmarks de la mano](hand_landmarks.png)  
 
 Para poder obtener estos landmarks, se utiliza el método Hands() :  
 ```python
