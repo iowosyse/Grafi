@@ -104,4 +104,4 @@ cap.release()
 cv.destroyAllWindows()
 ```
 ## Resultados:
-![Ejecucion](https://i.imgur.com/Opz95Hr.gif)
+![Ejecucion](ejecucion.gif)
