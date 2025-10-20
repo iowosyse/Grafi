@@ -14,8 +14,8 @@ En este código se dibujan 3 tipos de curvas diferentes:
   $\theta$ es el parámetro  
 
 * ***Hipocicloide***
-  $$
-    x(\theta) = (R - r)\cos(\theta) + r\cos(\frac{R - r}{r}\cdot \theta)
+  $$  
+    x(\theta) = (R - r)\cos(\theta) + r\cos(\frac{R - r}{r}\cdot \theta)  
   $$
   $$
     y(\theta) = (R - r)\sin(\theta) + r\sin(\frac{R - r}{r}\cdot \theta)
