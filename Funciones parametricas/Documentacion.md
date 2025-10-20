@@ -5,33 +5,33 @@ Según cambian los valores de los parámetros, y según cambie las funciones $f(
 En el caso de la imágen, son curvas que dependen de potencias y ángulos, por eso hay diferentes valores de $k$. 
 
 En este código se dibujan 3 tipos de curvas diferentes: 
-* ***Cardioide***
-  $$
-    x(\theta) = 2a(1 \pm \cos(\theta))\cos(\theta)
-  $$
+* ***Cardioide*** 
+  $$  
+    x(\theta) = 2a(1 \pm \cos(\theta))\cos(\theta)  
+  $$    
   *Donde:*  
   $a$ es el factor de escalado  
   $\theta$ es el parámetro  
 
 * ***Hipocicloide***
+  $$   
+    x(\theta) = (R - r)\cos(\theta) + r\cos(\frac{R - r}{r}\cdot \theta)    
   $$  
-    x(\theta) = (R - r)\cos(\theta) + r\cos(\frac{R - r}{r}\cdot \theta)  
-  $$
-  $$
-    y(\theta) = (R - r)\sin(\theta) + r\sin(\frac{R - r}{r}\cdot \theta)
-  $$
+  $$  
+    y(\theta) = (R - r)\sin(\theta) + r\sin(\frac{R - r}{r}\cdot \theta)  
+  $$  
   *Donde:*  
   $R$ es el radio del círculo grande    
   $r$ es el radio del círculo pequeño   
   $\theta$ es el parámetro  
 
 * ***Curvas de Lissajous***
-  $$
-    x(\theta) = A\sin(a\theta)
-  $$
-  $$
-    y(\theta) = B\cos(b\theta)
-  $$    
+  $$  
+    x(\theta) = A\sin(a\theta)  
+  $$  
+  $$  
+    y(\theta) = B\cos(b\theta)  
+  $$      
   *Donde:*    
   $A$ y $B$ son las amplitudes  
   $a$ y $b$ son las frecuencias     
