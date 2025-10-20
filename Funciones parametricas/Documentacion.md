@@ -6,32 +6,32 @@ En el caso de la imágen, son curvas que dependen de potencias y ángulos, por e
 
 En este código se dibujan 3 tipos de curvas diferentes: 
 * ***Cardioide*** 
-  $$  
+  ```math  
     x(\theta) = 2a(1 \pm \cos(\theta))\cos(\theta)  
-  $$    
+  ```    
   *Donde:*  
   $a$ es el factor de escalado  
   $\theta$ es el parámetro  
 
 * ***Hipocicloide***
-  $$   
+  ```math   
     x(\theta) = (R - r)\cos(\theta) + r\cos(\frac{R - r}{r}\cdot \theta)    
-  $$  
-  $$  
+  ```  
+  ```math  
     y(\theta) = (R - r)\sin(\theta) + r\sin(\frac{R - r}{r}\cdot \theta)  
-  $$  
+  ```  
   *Donde:*  
   $R$ es el radio del círculo grande    
   $r$ es el radio del círculo pequeño   
   $\theta$ es el parámetro  
 
 * ***Curvas de Lissajous***
-  $$  
+  ```math  
     x(\theta) = A\sin(a\theta)  
-  $$  
-  $$  
+  ```  
+  ```math  
     y(\theta) = B\cos(b\theta)  
-  $$      
+  ```      
   *Donde:*    
   $A$ y $B$ son las amplitudes  
   $a$ y $b$ son las frecuencias     
