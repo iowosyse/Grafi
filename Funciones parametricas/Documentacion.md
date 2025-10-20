@@ -6,9 +6,9 @@ En el caso de la imágen, son curvas que dependen de potencias y ángulos, por e
 
 En este código se dibujan 3 tipos de curvas diferentes: 
 * ***Cardioide*** 
-  ```math  
+  $ 
     x(\theta) = 2a(1 \pm \cos(\theta))\cos(\theta)  
-  ```    
+  $ 
   *Donde:*  
   $a$ es el factor de escalado  
   $\theta$ es el parámetro  
